@@ -1,11 +1,102 @@
 /* -------------------- IMPORTED FONTS -------------------------------------- */
-
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Irish+Grover&display=swap');
 /*-------------------- CSS RESET ---------------------------------------------------*/
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* -------------------- ROOT VARIABLES --------------------------------------- */
-
+:root {
+    --font-text: 'Habibi', sans-serif;
+    --font-headings: 'Irish Grover', cursive;
+    --color-green: #06A816;
+    --color-orange: #E75D02;
+    --color-black: #000000;
+    --color-white: #ffffff;
+}
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+header {
+    background-color: var(--color-green);
+}
 
+header h1 {
+    color: var(--color-white);
+    font-family: var(--font-headings);
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    color: var(--color-white);
+    font-family: var(--font-text);
+}
+
+main h2 {
+    color: var(--color-black);
+    font-family: var(--font-headings);
+    font-size: 1.75em;
+}
+
+main p {
+    color: var(--color-black);
+    font-family: var(--font-text);
+}
+
+main h3 {
+    color: var(--color-black);
+    font-family: var(--font-headings);
+    font-size: 1.25em;
+}
+figcaption {
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% transparency */
+    color: var(--color-white);
+    font-family: var(--font-text);
+    font-weight:600;
+}
+nav a {
+    display: inline-block;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: var(--font-text);
+}
+.contact {
+    background-color: var(--color-green);
+    padding: 20px;
+}
+
+.contact h2 {
+    color: var(--color-white);
+    font-family: var(--font-headings);
+}
+
+.contact address {
+    color: var(--color-white);
+    font-family: var(--font-text);
+}
+
+.contact a {
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.contact ul {
+    list-style-type: none;
+    color: var(--color-white);
+}
+.contact time {
+    color: var(--color-white);
+    font-family: var(--font-text);
+}
+footer {
+    color: var(--color-green);
+    font-family: var(--font-text);
+    font-weight: 600;
+}
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
 
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
